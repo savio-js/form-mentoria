@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Mentoria</title>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+    <form id="my-form">
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações pessoais</legend>
+          <div class="col-2">
+            <div class="input-wrapper">
+              <label for="info-name">Nome</label>
+              <input type="text" name="info-name" id="info-name" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="info-last-name">Sobrenome</label>
+              <input type="text" name="info-last-name" id="info-last-name">
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="info-email">E-mail<span>(digite um email válido)</span></label>
+            <input type="email" name="info-email" id="info-email" required>
+          </div>
+          <div class="input-wrapper">
+            <label for="info-tel">Telefone</label>
+            <input type="number" name="info-tel" id="info-tel" required>
+          </div>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do mentor</legend>
+          <div class="input-wrapper">
+            <label for="name-mentor">Nome do seu mentor</label>
+            <input type="text" name="name-mentor" id="name-mentor" required>
+          </div>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Seus horários disponíveis</legend>
+          <div class="mentory">
+            <h1>Primeira mentoria</h1>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="date-mentory">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="date-mentory" id="date-mentory">
+              </div>
+              <div class="input-wrapper">
+                <label for="time-mentory">Das</label>
+                <input type="time" name="time-mentory" id="time-mentory">
+              </div>
+              <div class="input-wrapper">
+                <label for="final-time-mentory">Até</label>
+                <input type="time" name="final-time-mentory" id="final-time-mentory">
+              </div>
+            </div>
+          </div>
+          <div class="mentory">
+            <h1>Segunda mentoria</h1>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="date-mentory">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="date-mentory" id="date-mentory">
+              </div>
+              <div class="input-wrapper">
+                <label for="time-mentory">Das</label>
+                <input type="time" name="time-mentory" id="time-mentory">
+              </div>
+              <div class="input-wrapper">
+                <label for="final-time-mentory">Até</label>
+                <input type="time" name="final-time-mentory" id="final-time-mentory">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </fieldset>
+
+    </form>
+    <footer>
+      <div class="form-submit">
+        <button 
+        class="button" 
+        type="submit"
+        form="my-form"
+        >
+          Salvar
+        </button>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
